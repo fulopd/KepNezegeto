@@ -28,20 +28,141 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.buttonMegjelenites = new System.Windows.Forms.Button();
+            this.buttonTorles = new System.Windows.Forms.Button();
+            this.buttonHatter = new System.Windows.Forms.Button();
+            this.buttonBezaras = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85F));
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.checkBox1, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel1, 1, 1);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(534, 291);
+            this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tableLayoutPanel1.SetColumnSpan(this.pictureBox1, 2);
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(528, 255);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(3, 264);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(60, 17);
+            this.checkBox1.TabIndex = 1;
+            this.checkBox1.Text = "Kitöltés";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.buttonBezaras);
+            this.flowLayoutPanel1.Controls.Add(this.buttonHatter);
+            this.flowLayoutPanel1.Controls.Add(this.buttonTorles);
+            this.flowLayoutPanel1.Controls.Add(this.buttonMegjelenites);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(83, 264);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(448, 24);
+            this.flowLayoutPanel1.TabIndex = 2;
+            // 
+            // buttonMegjelenites
+            // 
+            this.buttonMegjelenites.AutoSize = true;
+            this.buttonMegjelenites.Location = new System.Drawing.Point(124, 3);
+            this.buttonMegjelenites.Name = "buttonMegjelenites";
+            this.buttonMegjelenites.Size = new System.Drawing.Size(78, 23);
+            this.buttonMegjelenites.TabIndex = 0;
+            this.buttonMegjelenites.Text = "Megjelenítés";
+            this.buttonMegjelenites.UseVisualStyleBackColor = true;
+            this.buttonMegjelenites.Click += new System.EventHandler(this.buttonMegjelenites_Click);
+            // 
+            // buttonTorles
+            // 
+            this.buttonTorles.AutoSize = true;
+            this.buttonTorles.Location = new System.Drawing.Point(208, 3);
+            this.buttonTorles.Name = "buttonTorles";
+            this.buttonTorles.Size = new System.Drawing.Size(75, 23);
+            this.buttonTorles.TabIndex = 0;
+            this.buttonTorles.Text = "Törlés";
+            this.buttonTorles.UseVisualStyleBackColor = true;
+            this.buttonTorles.Click += new System.EventHandler(this.buttonTorles_Click);
+            // 
+            // buttonHatter
+            // 
+            this.buttonHatter.AutoSize = true;
+            this.buttonHatter.Location = new System.Drawing.Point(289, 3);
+            this.buttonHatter.Name = "buttonHatter";
+            this.buttonHatter.Size = new System.Drawing.Size(75, 23);
+            this.buttonHatter.TabIndex = 0;
+            this.buttonHatter.Text = "Háttér";
+            this.buttonHatter.UseVisualStyleBackColor = true;
+            this.buttonHatter.Click += new System.EventHandler(this.buttonHatter_Click);
+            // 
+            // buttonBezaras
+            // 
+            this.buttonBezaras.AutoSize = true;
+            this.buttonBezaras.Location = new System.Drawing.Point(370, 3);
+            this.buttonBezaras.Name = "buttonBezaras";
+            this.buttonBezaras.Size = new System.Drawing.Size(75, 23);
+            this.buttonBezaras.TabIndex = 0;
+            this.buttonBezaras.Text = "Bezárás";
+            this.buttonBezaras.UseVisualStyleBackColor = true;
+            this.buttonBezaras.Click += new System.EventHandler(this.buttonBezaras_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(534, 291);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form1";
             this.Text = "Képnézegető";
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Button buttonMegjelenites;
+        private System.Windows.Forms.Button buttonTorles;
+        private System.Windows.Forms.Button buttonHatter;
+        private System.Windows.Forms.Button buttonBezaras;
     }
 }
 

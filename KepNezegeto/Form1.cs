@@ -16,5 +16,25 @@ namespace KepNezegeto
         {
             InitializeComponent();
         }
+
+        private void buttonMegjelenites_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonTorles_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonHatter_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonBezaras_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
